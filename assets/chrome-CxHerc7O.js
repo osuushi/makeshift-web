@@ -1,0 +1,1 @@
+import{r as e}from"./catalog-LbhhffRU.js";function t(t){return e(t).register({id:`licenses`,label:`Third-party licenses`,category:`Document & Edit`,showInTools:!1,reason:()=>null,run:()=>{window.open(new URL(`./licenses/`,location.href),`_blank`,`noopener`)}})}export{t as installWebChrome};
