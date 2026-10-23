@@ -1,10 +1,19 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Makeshift</title><link rel="icon" type="image/png" href="./makeshift.png"/><link rel="apple-touch-icon" href="./apple-touch-icon.png"/><link rel="manifest" href="./manifest.webmanifest"/><meta name="theme-color" content="#f8f9fb"/>  <script type="module" crossorigin src="./assets/index-Bpv_mLcg.js"></script>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Makeshift</title><link rel="icon" type="image/png" href="./makeshift.png"/><link rel="apple-touch-icon" href="./apple-touch-icon.png"/><meta name="color-scheme" content="light dark"/><meta name="theme-color" content="#f8f9fb"/><script>
+(() => {
+  let preference = "system";
+  try { preference = localStorage.getItem("makeshift.theme") || "system"; } catch {}
+  const dark = preference === "dark" || (preference !== "light" && typeof matchMedia === "function" && matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.dataset.theme = dark ? "dark" : "light";
+  document.documentElement.style.colorScheme = dark ? "dark" : "light";
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#161e29" : "#f8f9fb";
+})();
+</script><link rel="manifest" href="./manifest.webmanifest"/>  <script type="module" crossorigin src="./assets/index-UK-kXbhG.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/planes-en0hsGlT.js">
   <link rel="modulepreload" crossorigin href="./assets/rectangle-edit-BHPoeP9T.js">
-  <link rel="modulepreload" crossorigin href="./assets/step-export-BfS-hPDh.js">
+  <link rel="modulepreload" crossorigin href="./assets/step-export-BjR0Ro-8.js">
   <link rel="modulepreload" crossorigin href="./assets/preload-helper-uBIymjUX.js">
   <link rel="modulepreload" crossorigin href="./assets/chunk-V2S4ZYJR-ChWbtCGt.js">
-  <link rel="stylesheet" crossorigin href="./assets/step-export-D6T6k4Wm.css">
+  <link rel="stylesheet" crossorigin href="./assets/step-export-Cqr3VZmH.css">
 </head>
 <body><main id="app" aria-label="Makeshift sketch editor"></main></body></html>
