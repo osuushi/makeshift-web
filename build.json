@@ -1,7 +1,7 @@
 {
-  "tag": "web-20261026T021328Z",
-  "timestamp": "2026-10-26T02:13:28.573Z",
-  "commit": "5d3f8989d0503011f0f39f96e16c5cfd091fd87d",
+  "tag": "web-20261027T224726Z",
+  "timestamp": "2026-10-27T22:47:26.988Z",
+  "commit": "e687c7d09971af0d39fb9b3693905f9e165e7bbb",
   "repository": "osuushi/makeshift",
   "webExceptions": "wasm"
 }
